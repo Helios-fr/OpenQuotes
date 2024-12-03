@@ -146,7 +146,3 @@ def DeleteQuote(id: int, admin_token: str):
 # Include routers in the app
 app.include_router(general_router, tags=["General"])
 app.include_router(admin_router, prefix="/admin", tags=["Administration"])
-
-# run the app
-if __name__ == '__main__':
-    uvicorn.run(app)
